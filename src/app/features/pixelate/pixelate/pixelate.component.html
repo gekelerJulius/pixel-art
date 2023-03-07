@@ -1,0 +1,7 @@
+<div class="container">
+  <input type="text" placeholder="Enter Image Url..." class="url-input">
+
+  <div class="img-container">
+    <img *ngIf="imgSrc$ | async as imgSrc" [src]="imgSrc | sanitize">
+  </div>
+</div>
